@@ -28,7 +28,7 @@
 
     <script>
         (function () {
-            const VALID_THEMES = ['classic', 'dark', 'green', 'blue', 'pastel'];
+            const VALID_THEMES = ['classic', 'dark', 'green', 'blue', 'pastel', 'classic-green'];
             let saved = 'classic';
             try { saved = localStorage.getItem('chessBoardTheme') || 'classic'; } catch (e) { }
             if (!VALID_THEMES.includes(saved)) saved = 'classic';
@@ -287,9 +287,11 @@
                         aria-pressed="false" type="button"></button>
                     <button class="theme-btn" data-theme="pastel" title="Pastel" aria-label="Pastel theme"
                         aria-pressed="false" type="button"></button>
+                    <button class="theme-btn" data-theme="classic-green" title="Classic Green" aria-label="Classic Green theme"
+                        aria-pressed="false" type="button"></button>
                 </div>
                 <div style="margin-top: 8px; font-size: 11px; color: rgba(255,255,255,0.5); text-align: center;">
-                    Classic · Dark · Green · Blue · Pastel
+                    Classic · Dark · Green · Blue · Pastel · Classic Green
                 </div>
             </div>
             <div class="card">
